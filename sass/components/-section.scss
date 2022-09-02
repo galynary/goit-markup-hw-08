@@ -1,0 +1,40 @@
+.section__title {
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $priamary-color;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.clients-list {
+	display: flex;
+	gap: 30px;
+}
+
+.clients-list__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #afb1b8;
+	transition: border-color$transion,
+		color $transion,
+		fill $transion;
+
+	&:hover,
+	&:focus {
+		border-color: $accent-color;
+		color: $accent-color;
+	}
+}
+
+.clients-list__icon {
+	fill: currentColor;
+	cursor: pointer;
+}
