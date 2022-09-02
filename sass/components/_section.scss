@@ -3,7 +3,7 @@
 	line-height: 1.16;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: $priamary-color;
+	color: #212121;
 	margin-top: 0px;
 	margin-bottom: 50px;
 }
@@ -23,7 +23,7 @@
 	border-radius: 4px;
 	cursor: pointer;
 	color: #afb1b8;
-	transition: border-color$transion,
+	transition: border-color $transion,
 		color $transion,
 		fill $transion;
 
