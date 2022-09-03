@@ -207,37 +207,88 @@
                     <ul class="work-list list">
                         <li class="work-list__item">
                             <div class="work-list__overlay">
-                                <img
-                                    class="work-list__img"
-                                    src="./images/studio/work/box1.jpg"
-                                    width="370"
-                                    height="294"
-                                    alt="клавіатура і планшет"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/studio/work/imgbox1-1x.webp 1x,
+                                            ./images/studio/work/imgbox1-2x.webp 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/studio/work/imgbox1-1x.jpg 1x,
+                                            ./images/studio/work/imgbox1-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <img
+                                        class="work-list__img"
+                                        src=" ./images/studio/work/imgbox1-1x.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt="клавіатура і планшет"
+                                    />
+                                </picture>
                                 <p class="work-list__text">Десктопні додатки</p>
                             </div>
                         </li>
                         <li class="work-list__item">
                             <div class="work-list__overlay">
-                                <img
-                                    class="work-list__img"
-                                    src="./images/studio/work/box2.jpg"
-                                    width="370"
-                                    height="294"
-                                    alt="мобільний телефон і ноутбук"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/studio/work/imgbox2-1x.webp 1x,
+                                            ./images/studio/work/imgbox2-2x.webp 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/studio/work/imgbox2-1x.jpg 1x,
+                                            ./images/studio/work/imgbox2-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <img
+                                        class="work-list__img"
+                                        src=" ./images/studio/work/imgbox2-1x.jpg"
+                                        width="370"
+                                        height="294"
+                                        alt="мобільний телефон і ноутбук"
+                                    />
+                                </picture>
                                 <p class="work-list__text">Мобільні додатки</p>
                             </div>
                         </li>
                         <li class="work-list__item">
                             <div class="work-list__overlay">
-                                <img
-                                    class="work-list__img"
-                                    src="./images/studio/work/box3.jpg"
-                                    width="370"
-                                    height="294"
-                                    alt="планшет у руці"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/studio/work/imgbox3-1x.webp 1x,
+                                            ./images/studio/work/imgbox3-2x.webp 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/studio/work/imgbox3-1x.jpg 1x,
+                                            ./images/studio/work/imgbox3-2x.jpg 2x
+                                        "
+                                        media="(min-width:1200px)"
+                                    />
+                                    <img
+                                        class="work-list__img"
+                                        src=" ./images/studio/work/imgbox3-1x.jpg "
+                                        width="370"
+                                        height="294"
+                                        alt="планшет у руці"
+                                    />
+                                </picture>
                                 <p class="work-list__text">
                                     Дизайнерські рішення
                                 </p>
@@ -254,13 +305,61 @@
                     </h2>
                     <ul class="list-team list">
                         <li class="list-team__item">
-                            <img
-                                class="list-team__img"
-                                src="./images/studio/team/photo1.jpg"
-                                width="270"
-                                height="260"
-                                alt="Игорь Демьяненко"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/studio/team/photodes-1x.webp 1x,
+                                        ./images/studio/team/photodes-2x.webp 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/team/photodes-1x.jpg 1x,
+                                        ./images/studio/team/photodes-2x.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/tablet.img/imgphoto1t-1x.webp 1x,
+                                        ./images/studio/tablet.img/imgphoto1t-2x.webp 2x
+                                    "
+                                    media="(min-width:768px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/tablet.img/imgphoto1t-1x.jpg 1x,
+                                        ./images/studio/tablet.img/imgphoto1t-2x.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto4-1x.webp 1x,
+                                        ./images/studio/mobile.img/imgphoto4-1x.webp 2x
+                                    "
+                                    media="(min-width:480px)"
+                                    type="image/webp"
+                                />
+
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 1x,
+                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 2x
+                                    "
+                                    media="(min-width:480px)"
+                                />
+                                <img
+                                    class="list-team__img"
+                                    src=" ./images/studio/mobile.img/imgphoto4-1x.jpg"
+                                    width="450"
+                                    height="460"
+                                    alt="Игорь Демьяненко"
+                                />
+                            </picture>
                             <div class="list-team__box">
                                 <h3 class="list-team__title">
                                     Ігор Дем'яненко
@@ -337,13 +436,62 @@
                             </div>
                         </li>
                         <li class="list-team__item">
-                            <img
-                                class="list-team__img"
-                                src="./images/studio/team/photo2.jpg"
-                                width="270"
-                                height="260"
-                                alt="Ольга Репина"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images//studio/team/photodes2-2x.webp 1x,
+                                        ./images/studio/team/photodes2-2x.webp  2x
+                                    "
+                                    media="(min-width:1200px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images//studio/team/photodes2-2x.jpg 1x,
+                                        ./images/studio/team/photodes2-2x.jpg  2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/tablet.img/imgphoto2t-1x.webp 1x,
+                                        ./images/studio/tablet.img/imgphoto2t-2x.webp 2x
+                                    "
+                                    media="(min-width:768px)"
+                                    type="image/webp"
+                                />
+
+                                <source
+                                    srcset="
+                                        ./images/studio/tablet.img/imgphoto2t-1x.jpg 1x,
+                                        ./images/studio/tablet.img/imgphoto2t-2x.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto2-1x.webp 1x,
+                                        ./images/studio/mobile.img/imgphoto2-1x.webp 2x
+                                    "
+                                    media="(min-width:480px)"
+                                    type="image/webp"
+                                />
+
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto2-1x.jpg 1x,
+                                        ./images/studio/mobile.img/imgphoto2-1x.jpg 2x
+                                    "
+                                    media="(min-width:480px)"
+                                />
+                                <img
+                                    class="list-team__img"
+                                    src="./images/studio/mobile.img/imgphoto2-1x.jpg"
+                                    width="450"
+                                    height="460"
+                                    alt="Ольга Репина"
+                                />
+                            </picture>
                             <div class="list-team__box">
                                 <h3 class="list-team__title">Ольга Репіна</h3>
                                 <p class="list-team__text">
@@ -420,13 +568,61 @@
                             </div>
                         </li>
                         <li class="list-team__item">
-                            <img
-                                class="list-team__img"
-                                src="./images/studio/team/photo3.jpg"
-                                width="270"
-                                height="260"
-                                alt="Николай Тарасов"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/studio/team/photodes3-1x.webp 1x,
+                                        ./images/studio/team/photodes3-2x.webp 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/team/photodes3-1x.jpg 1x,
+                                        ./images/studio/team/photodes3-2x.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/tablet.img/imgphoto3t-1x.webp 1x,
+                                        ./images/studio/tablet.img/imgphoto3t-2x.webp 2x
+                                    "
+                                    media="(min-width:768px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/tablet.img/imgphoto3t-1x.jpg 1x,
+                                        ./images/studio/tablet.img/imgphoto3t-2x.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto3-1x.webp 1x,
+                                        ./images/studio/mobile.img/imgphoto3-2x.webp 2x
+                                    "
+                                    media="(min-width:480px)"
+                                    type="image/webp"
+                                />
+
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto3-1x.jpg 1x,
+                                        ./images/studio/mobile.img/imgphoto3-2x.jpg 2x
+                                    "
+                                    media="(min-width:480px)"
+                                />
+                                <img
+                                    class="list-team__img"
+                                    src="./images/studio/mobile.img/imgphoto3-1x.jpg"
+                                    width="450"
+                                    height="460"
+                                    alt="Николай Тарасов"
+                                />
+                            </picture>
                             <div class="list-team__box">
                                 <h3 class="list-team__title">Микола Тарасов</h3>
                                 <p class="list-team__text">Marketing</p>
@@ -501,13 +697,62 @@
                             </div>
                         </li>
                         <li class="list-team__item">
-                            <img
-                                class="list-team__img"
-                                src="./images/studio/team/photo4.jpg"
-                                width="270"
-                                height="260"
-                                alt="Михаил Ермаков"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto4-1x.webp 1x,
+                                        ./images/studio/mobile.img/imgphoto4-1x.webp 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 1x,
+                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 2x
+                                    "
+                                    media="(min-width:1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto4-1x.webp 1x,
+                                        ./images/studio/mobile.img/imgphoto4-1x.webp 2x
+                                    "
+                                    media="(min-width:768px)"
+                                    type="image/webp"
+                                />
+
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 1x,
+                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 2x
+                                    "
+                                    media="(min-width:768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto4-1x.webp 1x,
+                                        ./images/studio/mobile.img/imgphoto4-2x.webp 2x
+                                    "
+                                    media="(min-width:480px)"
+                                    type="image/webp"
+                                />
+
+                                <source
+                                    srcset="
+                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 1x,
+                                        ./images/studio/mobile.img/imgphoto4-2x.jpg 2x
+                                    "
+                                    media="(min-width:480px)"
+                                />
+                                <img
+                                    class="list-team__img"
+                                    src="./images/studio/mobile.img/imgphoto4-1x.jpg"
+                                    width="450"
+                                    height="460"
+                                    alt="Михаил Ермаков"
+                                />
+                            </picture>
                             <div class="list-team__box">
                                 <h3 class="list-team__title">
                                     Михайло Єрмаков
