@@ -1181,7 +1181,31 @@
                 </form>
             </div>
         </div>
+        <button
+            type="button"
+            class="menu-button is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+        >
+            <svg width="40" hidth="40" aria-label="Перемикач мобільного меню">
+                <use
+                    class="icon-cross"
+                    href="./images/icons.svg/sprite.svg#icon-close"
+                ></use>
+                <use
+                    class="icon-menu"
+                    href="./images/icons.svg/sprite.svg#icon-menu"
+                ></use>
+            </svg>
+        </button>
+
+        <!-- <div class="menu-container" id="menu-container" data-menu>
+            <div class="site-nav"></div>
+            <div class="header-nav__contacts"></div>
+        </div>-->
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
         <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init({
