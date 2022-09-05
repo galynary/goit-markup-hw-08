@@ -1,11 +1,21 @@
 ;(() => {
-    const menuBtnRef = document.guerySelector('[data-menu-button]')
-    const mobileMenuRef = document.guerySelector('[dta-menu]')
-    menuBtnRef.addEventListener('click', () => {
-        const expanded =
-            menuBtnRef.getAttribute('aria-expended') === 'true' || false
-        menuBtnRef.classList.toggle('is-open')
-        menuBtnRef.setAttribute('aria-expended', !expanded)
-        mobileMenuRef.classList.toggle('is-open')
-    })
+    const refs = {
+        openMenulBtn: document.querySelector('[data-menu-open]'),
+        closeMenulBtn: document.querySelector('[data-menu-close]'),
+        menu: document.querySelector('[data-menu]'),
+        body: document.querySelector('[bodyl]'),
+        menuNav: document.querySelector('[menu-nav]'),
+    }
+
+    refs.openMenu.Btn.addEventListener('click', toggleMenu)
+    refs.closeMenu.Btn.addEventListener('click', toggleMenu)
+    refs.menuNav.addEventListener('click', removeMenu)
+
+    function toggleMenu() {
+        refs.menu.classList.toggle('is-hidden')
+        refs.body.classList.toggle('no-scroll')
+    }
+    function removeMenu() {
+        refs.menu.classList.add('is-hidden')
+    }
 })()
