@@ -209,7 +209,7 @@
                 </div>
             </section>
             <!--переваги-->
-            <section class="section section--no padding top">
+            <section class="section">
                 <div class="container">
                     <h2
                         class="section__title--section-advantages"
@@ -230,13 +230,15 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="list-advantages__title">
-                                Увага до деталей
-                            </h3>
-                            <p class="list-advantages__text">
-                                Ідейні міркування, а також початок повсякденної
-                                роботи по формуванню позиції.
-                            </p>
+                            <div class="list-advantages-text__box">
+                                <h3 class="list-advantages__title">
+                                    Увага до деталей
+                                </h3>
+                                <p class="list-advantages__text">
+                                    Ідейні міркування, а також початок
+                                    повсякденної роботи по формуванню позиції.
+                                </p>
+                            </div>
                         </li>
                         <li class="list-advantages__item">
                             <div class="list-advantages__box">
@@ -250,13 +252,15 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="list-advantages__title">
-                                Пунктуальність
-                            </h3>
-                            <p class="list-advantages__text">
-                                Завдання організації, особливо ж рамки та місце
-                                навчання кадрів тягне у себе.
-                            </p>
+                            <div class="list-advantages-text__box">
+                                <h3 class="list-advantages__title">
+                                    Пунктуальність
+                                </h3>
+                                <p class="list-advantages__text">
+                                    Завдання організації, особливо ж рамки та
+                                    місце навчання кадрів тягне у себе.
+                                </p>
+                            </div>
                         </li>
                         <li class="list-advantages__item">
                             <div class="list-advantages__box">
@@ -270,11 +274,15 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="list-advantages__title">Планування</h3>
-                            <p class="list-advantages__text">
-                                Також консультація з широким активом в значній
-                                мірою зумовлює.
-                            </p>
+                            <div class="list-advantages-text__box">
+                                <h3 class="list-advantages__title">
+                                    Планування
+                                </h3>
+                                <p class="list-advantages__text">
+                                    Також консультація з широким активом в
+                                    значній мірою зумовлює.
+                                </p>
+                            </div>
                         </li>
                         <li class="list-advantages__item">
                             <div class="list-advantages__box">
@@ -288,23 +296,23 @@
                                     ></use>
                                 </svg>
                             </div>
-                            <h3 class="list-advantages__title">
-                                Сучасні технології
-                            </h3>
-                            <p class="list-advantages__text">
-                                Значимість цих проблем настільки очевидна, що
-                                реалізація планових завдань.
-                            </p>
+                            <div class="list-advantages-text__box">
+                                <h3 class="list-advantages__title">
+                                    Сучасні технології
+                                </h3>
+                                <p class="list-advantages__text">
+                                    Значимість цих проблем настільки очевидна,
+                                    що реалізація планових завдань.
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
             <!--наша работа-->
-            <section class="section section--no padding top">
+            <section class="section--no-padding-top">
                 <div class="container">
-                    <h2 class="section__title" data-aos="fade-down">
-                        Чим ми займаємося
-                    </h2>
+                    <h2 class="section__title">Чим ми займаємося</h2>
                     <ul class="work-list list">
                         <li class="work-list__item">
                             <div class="work-list__overlay">
@@ -401,9 +409,7 @@
             <!--команда-->
             <section class="section section--gray-background">
                 <div class="container">
-                    <h2 class="section__title" data-aos="fade-down">
-                        Наша команда
-                    </h2>
+                    <h2 class="section__title">Наша команда</h2>
                     <ul class="list-team list">
                         <li class="list-team__item">
                             <picture>
@@ -439,8 +445,8 @@
                                 />
                                 <source
                                     srcset="
-                                        ./images/studio/mobile.img/imgphoto4-1x.webp 1x,
-                                        ./images/studio/mobile.img/imgphoto4-1x.webp 2x
+                                        ./images/studio/mobile.img/imgphoto1-1x.webp 1x,
+                                        ./images/studio/mobile.img/imgphoto1-2x.webp 2x
                                     "
                                     media="(min-width:480px)"
                                     type="image/webp"
@@ -448,16 +454,16 @@
 
                                 <source
                                     srcset="
-                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 1x,
-                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 2x
+                                        ./images/studio/mobile.img/imgphoto1-1x.jpg 1x,
+                                        ./images/studio/mobile.img/imgphoto1-1x.jpg 2x
                                     "
                                     media="(min-width:480px)"
                                 />
                                 <img
                                     class="list-team__img"
-                                    src=" ./images/studio/mobile.img/imgphoto4-1x.jpg"
-                                    width="450"
-                                    height="460"
+                                    src="./images/studio/mobile.img/imgphoto1-1x.jpg 1x"
+                                    width="270"
+                                    height="260"
                                     alt="Игорь Демьяненко"
                                 />
                             </picture>
@@ -540,7 +546,7 @@
                             <picture>
                                 <source
                                     srcset="
-                                        ./images//studio/team/photodes2-2x.webp 1x,
+                                        ./images//studio/team/photodes2-1x.webp 1x,
                                         ./images/studio/team/photodes2-2x.webp  2x
                                     "
                                     media="(min-width:1200px)"
@@ -548,7 +554,7 @@
                                 />
                                 <source
                                     srcset="
-                                        ./images//studio/team/photodes2-2x.jpg 1x,
+                                        ./images//studio/team/photodes2-1x.jpg 1x,
                                         ./images/studio/team/photodes2-2x.jpg  2x
                                     "
                                     media="(min-width:1200px)"
@@ -561,14 +567,14 @@
                                     media="(min-width:768px)"
                                     type="image/webp"
                                 />
-
                                 <source
                                     srcset="
-                                        ./images/studio/tablet.img/imgphoto2t-1x.jpg 1x,
-                                        ./images/studio/tablet.img/imgphoto2t-2x.jpg 2x
+                                        ./images//studio/tablet.img/imgphoto2t-1x.jpg 1x,
+                                        ./images/studio/tablet.img/imgphoto2t-2x.jpg  2x
                                     "
                                     media="(min-width:768px)"
                                 />
+
                                 <source
                                     srcset="
                                         ./images/studio/mobile.img/imgphoto2-1x.webp 1x,
@@ -587,9 +593,9 @@
                                 />
                                 <img
                                     class="list-team__img"
-                                    src="./images/studio/mobile.img/imgphoto2-1x.jpg"
-                                    width="450"
-                                    height="460"
+                                    src="./images/studio/mobile.img/imgphoto2-1x.jpg 1x"
+                                    width="270"
+                                    height="260"
                                     alt="Ольга Репина"
                                 />
                             </picture>
@@ -718,9 +724,9 @@
                                 />
                                 <img
                                     class="list-team__img"
-                                    src="./images/studio/mobile.img/imgphoto3-1x.jpg"
-                                    width="450"
-                                    height="460"
+                                    src="./images/studio/mobile.img/imgphoto3-1x.jpg 1x"
+                                    width="270"
+                                    height="260"
                                     alt="Николай Тарасов"
                                 />
                             </picture>
@@ -801,23 +807,23 @@
                             <picture>
                                 <source
                                     srcset="
-                                        ./images/studio/mobile.img/imgphoto4-1x.webp 1x,
-                                        ./images/studio/mobile.img/imgphoto4-1x.webp 2x
+                                        ./images/studio/team/photo4des-1x.webp 1x,
+                                        ./images/studio/team/photo4des-2x.webp 2x
                                     "
                                     media="(min-width:1200px)"
                                     type="image/webp"
                                 />
                                 <source
                                     srcset="
-                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 1x,
-                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 2x
+                                        ./images/studio/team/photo4des-1x.jpg 1x,
+                                        ./images/studio/team/photo4des-2x.jpg 2x
                                     "
                                     media="(min-width:1200px)"
                                 />
                                 <source
                                     srcset="
-                                        ./images/studio/mobile.img/imgphoto4-1x.webp 1x,
-                                        ./images/studio/mobile.img/imgphoto4-1x.webp 2x
+                                        ./images/studio/tablet.img/imgphoto4t-1x.webp 1x,
+                                        ./images/studio/tablet.img/imgphoto4t-1x.webp 2x
                                     "
                                     media="(min-width:768px)"
                                     type="image/webp"
@@ -825,8 +831,8 @@
 
                                 <source
                                     srcset="
-                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 1x,
-                                        ./images/studio/mobile.img/imgphoto4-1x.jpg 2x
+                                        ./images/studio/tablet.img/imgphoto4t-1x.jpg 1x,
+                                        ./images/studio/tablet.img/imgphoto4t-2x.jpg 2x
                                     "
                                     media="(min-width:768px)"
                                 />
@@ -848,9 +854,9 @@
                                 />
                                 <img
                                     class="list-team__img"
-                                    src="./images/studio/mobile.img/imgphoto4-1x.jpg"
-                                    width="450"
-                                    height="460"
+                                    src="./images/studio/mobile.img/imgphoto4-1x.jpg 1x"
+                                    width="270"
+                                    height="260"
                                     alt="Михаил Ермаков"
                                 />
                             </picture>

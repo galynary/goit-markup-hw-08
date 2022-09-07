@@ -1,26 +1,23 @@
 @media screen and (min-width:480px) {
-	.section__title {
-		font-size: 36px;
-		line-height: 1.16;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: $priamary-color;
-		margin-top: 0px;
-		margin-bottom: 50px;
-	}
+
 
 	.clients-list {
-		display: block;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		gap: 15px;
 	}
 
 	.clients-list__link {
-		display: block;
+
+		flex-basis: calc(50% - 15px);
+		margin-bottom: 10px;
 		align-items: center;
 		justify-content: center;
-		width: 170px;
-		height: 92px;
 		border: 1px solid #afb1b8;
 		border-radius: 4px;
+		width: 210px;
+		height: 92px;
 		cursor: pointer;
 		color: #afb1b8;
 		transition: border-color$transion,
