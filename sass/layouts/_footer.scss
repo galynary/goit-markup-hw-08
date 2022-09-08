@@ -4,14 +4,19 @@
 		padding: 60px 0px;
 	}
 
+	.footer-form {
+		margin: 0 auto;
+
+	}
+
 	.footer__inner {
 		display: flex;
 		align-items: baseline;
 	}
 
 	.footter__address {
-		margin-right: 70px;
 		flex-grow: 1;
+		margin: 0 auto;
 	}
 
 	.logo {
@@ -31,11 +36,6 @@
 
 	.logo__logo-white {
 		color: #fff;
-	}
-
-	.footter__address {
-		margin-right: 70px;
-		flex-grow: 1;
 	}
 
 	.social-icons__footer {
@@ -69,6 +69,15 @@
 
 	}
 
+	.icons__title {
+		font-size: 14px;
+		line-height: 1.14;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
 	.footer-form__title,
 	.social-icons__title {
 		color: #fff;
@@ -78,6 +87,15 @@
 		line-height: 1.14;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
+	}
+
+	.address-list {
+		margin-bottom: 60px;
+	}
+
+	.social-icons__footer {
+		margin: 0 auto;
+		margin-bottom: 60px;
 	}
 
 	.icons-link-footer {
@@ -91,6 +109,14 @@
 		background-color: rgba(255, 255, 255, 0.1);
 		cursor: pointer;
 		color: #fff;
+	}
+
+	.footer-form__text {
+		display: block;
+	}
+
+	.form-input {
+		margin-bottom: 20px;
 	}
 
 	.social-icons__list {
@@ -134,9 +160,13 @@
 	}
 
 	.footer-form__input {
-		width: 358px;
-		height: 100%;
-		padding: 16px 16px;
+		width: 450px;
+		height: 50px;
+		font-size: $title-font-size;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+		padding: 15px 15px;
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 		border-radius: 4px;
@@ -160,7 +190,7 @@
 		justify-content: center;
 		letter-spacing: 0.06em;
 		text-align: center;
-		line-height: 1.8;
+		line-height: 1.9;
 		cursor: pointer;
 		display: inline-flex;
 		border: 1px solid transparent;
@@ -199,22 +229,12 @@
 		padding: 60px 0px;
 	}
 
-	.footer__inner {
-		display: flex;
-		align-items: baseline;
-	}
-
-	.footter__address {
-		margin-right: 70px;
-		flex-grow: 1;
-	}
-
 	.logo {
 		font-family: 'Raleway';
 		font-style: normal;
 		font-weight: 700;
-		font-size: 26px;
-		line-height: 1.19;
+		font-size: 24px;
+		line-height: 1.37;
 		letter-spacing: 0.03em;
 		color: $accent-color;
 		display: inline-block;
@@ -229,7 +249,7 @@
 	}
 
 	.footter__address {
-		margin-right: 70px;
+		margin-right: 165px;
 		flex-grow: 1;
 	}
 
@@ -256,6 +276,7 @@
 
 	.footer__inner {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: baseline;
 	}
 
@@ -263,7 +284,6 @@
 	.social-icons__title {
 		color: #fff;
 		margin-bottom: 20px;
-		font-size: 14px;
 		font-size: $text-font-size;
 		line-height: 1.14;
 		letter-spacing: 0.03em;
@@ -326,7 +346,9 @@
 	.footer-form__input {
 		width: 358px;
 		height: 100%;
-		padding: 16px 16px;
+		font-size: $title-font-size;
+		line-height: 1.25;
+		padding: 15px 15px;
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 		border-radius: 4px;
@@ -350,7 +372,7 @@
 		justify-content: center;
 		letter-spacing: 0.06em;
 		text-align: center;
-		line-height: 1.8;
+		line-height: 1.9;
 		cursor: pointer;
 		display: inline-flex;
 		border: 1px solid transparent;
@@ -421,6 +443,8 @@
 	.footter__address {
 		margin-right: 70px;
 		flex-grow: 1;
+		max-width: 207px;
+		margin: 0;
 	}
 
 	.social-icons__footer {
@@ -440,13 +464,24 @@
 		display: inline-block;
 	}
 
+	.address-list__item {
+		text-align: left;
+	}
+
 	.address-list__item:not(:last-child) {
 		margin-bottom: 9px;
 	}
 
 	.footer__inner {
 		display: flex;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
 		align-items: baseline;
+		text-align: left;
+	}
+
+	.address-list {
+		text-align: left;
 	}
 
 	.footer-form__title,
@@ -458,6 +493,15 @@
 		line-height: 1.14;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
+	}
+
+	.footer-form {
+		margin: 0;
+	}
+
+	.footer-form__text {
+		display: flex;
+		margin: 0;
 	}
 
 	.icons-link-footer {
