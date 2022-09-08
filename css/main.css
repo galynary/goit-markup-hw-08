@@ -1125,7 +1125,7 @@ button {
   overflow: hidden;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .site-nav,
 .header-nav__contacts {
     display: none;
@@ -1706,7 +1706,7 @@ button {
     margin-right: 50px;
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .studio-hero {
     text-align: center;
     background-color: #2f303a;
@@ -1722,13 +1722,13 @@ button {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero-1-480.jpg");
   }
 }
-@media screen and (min-width: 300px) and (min-device-pixel-ratio: 2), screen and (min-width: 300px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 300px) and (min-resolution: 192dpi), screen and (min-width: 300px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .studio-hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/studio/hero-2-480.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/studio/hero-2-480.jpg");
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .studio-hero__title {
     font-size: 26px;
     line-height: 1.61;
@@ -1746,7 +1746,7 @@ button {
     width: 360px;
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .studio-hero__button {
     width: 200px;
     height: 50px;
@@ -1907,7 +1907,7 @@ button {
             transform: scale(1.03);
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .modal {
     display: inline-block;
     position: absolute;
@@ -2922,7 +2922,7 @@ button {
             transform: scale(1.03);
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .section-advantages {
     padding: 60px 0px;
   }
@@ -3156,7 +3156,7 @@ button {
     text-align: left;
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .section--no-padding-top {
     display: none;
   }
@@ -3228,7 +3228,7 @@ button {
     bottom: 0;
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .section--gray-background {
     background-color: #f5f4fa;
   }
@@ -3499,7 +3499,7 @@ button {
     cursor: pointer;
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .clients-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3788,7 +3788,7 @@ button {
           transform: translateY(0);
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 480px) {
   .footer {
     background-color: #2f303a;
     padding: 60px 0px;
