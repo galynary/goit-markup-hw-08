@@ -6,21 +6,24 @@
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		gap: 15px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.clients-list__item {
-		flex-basis: 50%;
-		width: 50%;
+		height: 92px;
+		flex-basis: ((100 - 30px) / 2);
 	}
 
 	.clients-list__link {
-		margin-bottom: 10px;
+		display: flex;
 		align-items: center;
 		justify-content: center;
 		border: 1px solid #afb1b8;
 		border-radius: 4px;
-		width: 210px;
-		height: 92px;
+		height: 100%;
+		width: 100%;
+		padding: 16px 52px;
 		cursor: pointer;
 		color: #afb1b8;
 		transition: border-color$transion,
@@ -52,25 +55,31 @@
 	}
 
 	.clients-list {
-		/*	display: flex;
-		flex-wrap: wrap;*/
+		display: flex;
+		flex-wrap: wrap;
 		gap: 30px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.clients-list__item {
-		/*	flex-basis: calc ((100% - 60) / 3);*/
-		flex-basis: 33.333%;
+		height: 92px;
+		flex-basis: calc ((100% - 60) / 3);
+
 	}
 
 	.clients-list__link {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 33.333%;
 		border: 1px solid #afb1b8;
 		border-radius: 4px;
+		padding: 15px 60px;
 		cursor: pointer;
 		color: #afb1b8;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
 		transition: border-color$transion,
 			color $transion,
 			fill $transion;
@@ -106,12 +115,18 @@
 		gap: 30px;
 	}
 
+	.clients-list__item {
+		height: 92px;
+		display: flex;
+	}
+
 	.clients-list__link {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 170px;
-		height: 92px;
+		width: 100%;
+		height: 100%;
+		padding: 16px 32px;
 		border: 1px solid #afb1b8;
 		border-radius: 4px;
 		cursor: pointer;
