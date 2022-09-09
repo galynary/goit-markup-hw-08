@@ -9,14 +9,11 @@
 	}
 
 	.clients-list__item {
-		flex-basis: calc(50% - 15px);
-		margin-bottom: 30px;
-		width: 100%;
-		margin: 0 auto;
+		flex-basis: 50%;
+		width: 50%;
 	}
 
 	.clients-list__link {
-		width: 50%;
 		margin-bottom: 10px;
 		align-items: center;
 		justify-content: center;
@@ -61,7 +58,7 @@
 	}
 
 	.clients-list__item {
-		flex-basis: calc ((100 - 2 * 30px) / 3);
+		flex-basis: calc ((100% - 60) / 3);
 	}
 
 	.clients-list__link {
