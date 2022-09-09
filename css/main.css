@@ -3550,16 +3550,14 @@ button {
     margin-bottom: 50px;
   }
   .clients-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    /*	display: flex;
+    flex-wrap: wrap;*/
     gap: 30px;
   }
   .clients-list__item {
-    -ms-flex-preferred-size: calc 13.3333333333%;
-        flex-basis: calc 13.3333333333%;
+    /*	flex-basis: calc ((100% - 60) / 3);*/
+    -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
   }
   .clients-list__link {
     display: -webkit-box;
@@ -3689,20 +3687,18 @@ button {
     -webkit-transform: 1.2;
             transform: 1.2;
   }
+}
+@media screen and (min-width: 480px) and (max-width: 960px) {
   .portfolio-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 30px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
   }
   .portfolio-list__item {
     background: #ffffff;
     position: relative;
+    max-width: 100%;
+    height: auto;
   }
   .portfolio__link {
     display: block;
@@ -3714,6 +3710,9 @@ button {
   .portfolio-overlay {
     position: relative;
     overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
   .img {
     display: block;
@@ -3723,6 +3722,10 @@ button {
   .wrap-portfolio-text {
     padding: 22px 20px;
     margin-top: 0px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
     border-top: none;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
@@ -3755,6 +3758,7 @@ button {
             transition-timing-function: linear;
     -webkit-transition-delay: 0s;
             transition-delay: 0s;
+    margin: 0 auto;
   }
   .portfolio-overlay__text {
     background-color: rgba(33, 150, 243, 0.9);
@@ -3767,8 +3771,11 @@ button {
     letter-spacing: 0.03em;
     top: 0;
     left: 0;
+    max-width: 450px;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
     padding: 77px 24px;
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -3830,6 +3837,8 @@ button {
     -webkit-transform: 1.2;
             transform: 1.2;
   }
+}
+@media screen and (min-width: 961px) {
   .portfolio-list {
     display: -webkit-box;
     display: -ms-flexbox;

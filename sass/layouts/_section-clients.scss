@@ -52,13 +52,14 @@
 	}
 
 	.clients-list {
-		display: flex;
-		flex-wrap: wrap;
+		/*	display: flex;
+		flex-wrap: wrap;*/
 		gap: 30px;
 	}
 
 	.clients-list__item {
-		flex-basis: calc ((100% - 60) / 3);
+		/*	flex-basis: calc ((100% - 60) / 3);*/
+		flex-basis: 33.333%;
 	}
 
 	.clients-list__link {
