@@ -36,14 +36,14 @@
 
                     <ul class="site-nav list">
                         <li class="site-nav__item">
-                            <a class="site-nav__link link" href="index.html"
+                            <a
+                                class="site-nav__link site-nav__link--current link"
+                                href="index.html"
                                 >Студія</a
                             >
                         </li>
                         <li class="site-nav__item">
-                            <a
-                                class="site-nav__link site-nav__link--current link"
-                                href="portfolio.html"
+                            <a class="site-nav__link link" href="portfolio.html"
                                 >Портфоліо</a
                             >
                         </li>
@@ -88,7 +88,12 @@
                             </a>
                         </li>
                     </ul>
-                    <button type="button" class="menu-open-btn" data-menu-open>
+                    <button
+                        type="button"
+                        class="menu-toggle js-open-menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                    >
                         <svg
                             class="icon-open"
                             data-menu-open
@@ -102,10 +107,13 @@
                         </svg>
                     </button>
 
-                    <div class="menu-container is-hidden" data-menu>
+                    <div
+                        class="menu-container js-menu-container"
+                        id="mobile-menu"
+                    >
                         <button
                             type="button"
-                            class="menu-btn-close"
+                            class="menu-toggle js-close-menu"
                             data-menu-close
                         >
                             <svg
@@ -120,73 +128,71 @@
                                 ></use>
                             </svg>
                         </button>
-                        <div class="container">
-                            <ul class="menu-nav list" menu-nav>
-                                <li class="menu-nav__item">
-                                    <a
-                                        class="menu-nav__link link"
-                                        href="index.html"
-                                        >Студія</a
-                                    >
-                                </li>
-                                <li class="menu-nav__item">
-                                    <a
-                                        class="menu-nav__link menu-nav__link--current link"
-                                        href="portfolio.html"
-                                        >Портфоліо</a
-                                    >
-                                </li>
-                                <li class="menu-nav__item">
-                                    <a class="menu-nav__link link" href=""
-                                        >Контакти</a
-                                    >
-                                </li>
-                            </ul>
-                            <ul class="menu-contacts list">
-                                <li class="menu-contacts__item">
-                                    <a
-                                        href=" +380961111111"
-                                        class="menu-contacts__link menu-contacts__link--curent link"
-                                    >
-                                        +38 096 111 11 11
-                                    </a>
-                                </li>
-                                <li class="menu-contacts__item">
-                                    <a
-                                        href="info@devstudio.com"
-                                        class="menu-contacts__link link"
-                                    >
-                                        info@devstudio.com
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul class="menu-social list">
-                                <li class="menu-social__item">
-                                    <a
-                                        class="menu-social__link link"
-                                        href="index.html"
-                                        >Студія</a
-                                    >
-                                </li>
-                                <li class="menu-social__item">
-                                    <a
-                                        class="menu-social__link menu-social__link--curent link"
-                                        href="portfolio.html"
-                                        >Портфоліо</a
-                                    >
-                                </li>
-                                <li class="menu-social__item">
-                                    <a class="menu-social__link link" href=""
-                                        >Контакти</a
-                                    >
-                                </li>
-                                <li class="menu-social__item">
-                                    <a class="menu-social__link link" href=""
-                                        >Контакти</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="menu-nav list">
+                            <li class="menu-nav__item">
+                                <a
+                                    class="menu-nav__link menu-nav__link--current link"
+                                    href="index.html"
+                                    >Студія</a
+                                >
+                            </li>
+                            <li class="menu-nav__item">
+                                <a
+                                    class="menu-nav__link link"
+                                    href="portfolio.html"
+                                    >Портфоліо</a
+                                >
+                            </li>
+                            <li class="menu-nav__item">
+                                <a class="menu-nav__link link" href=""
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="menu-contacts list">
+                            <li class="menu-contacts__item">
+                                <a
+                                    href=" +380961111111"
+                                    class="menu-contacts__link menu-contacts__link--curent link"
+                                >
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="menu-contacts__item">
+                                <a
+                                    href="info@devstudio.com"
+                                    class="menu-contacts__link link"
+                                >
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-social list">
+                            <li class="menu-social__item">
+                                <a
+                                    class="menu-social__link link"
+                                    href="index.html"
+                                    >Студія</a
+                                >
+                            </li>
+                            <li class="menu-social__item">
+                                <a
+                                    class="menu-social__link link"
+                                    href="portfolio.html"
+                                    >Портфоліо</a
+                                >
+                            </li>
+                            <li class="menu-social__item">
+                                <a class="menu-social__link link" href=""
+                                    >Контакти</a
+                                >
+                            </li>
+                            <li class="menu-social__item">
+                                <a class="menu-social__link link" href=""
+                                    >Контакти</a
+                                >
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

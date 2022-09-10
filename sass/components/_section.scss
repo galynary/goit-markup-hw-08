@@ -1,17 +1,17 @@
-@media screen and (min-width:480px) {
-	.section {
-		padding: 60px 0px;
-	}
-
-	.section__title {
-		font-size: 28px;
-		line-height: 1.17;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: #212121;
-		margin-bottom: 30px;
-	}
+/*@media (max-width:767px) {*/
+.section {
+	padding: 60px 0px;
 }
+
+.section__title {
+	font-size: 28px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #212121;
+	margin-bottom: 30px;
+}
+
 
 @media screen and (min-width:768px) {
 	.section {

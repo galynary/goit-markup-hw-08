@@ -1,47 +1,44 @@
-@media screen and (min-width:480px) {
+.clients-list {
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+}
 
+.clients-list__item {
+	height: 92px;
+	flex-basis: ((100 - 30px) / 2);
+}
 
-	.clients-list {
-		display: flex;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		gap: 15px;
-		align-items: center;
-		justify-content: center;
-	}
+.clients-list__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	height: 100%;
+	width: 100%;
+	padding: 16px 52px;
+	cursor: pointer;
+	color: #afb1b8;
+	transition: border-color$transion,
+		color $transion,
+		fill $transion;
 
-	.clients-list__item {
-		height: 92px;
-		flex-basis: ((100 - 30px) / 2);
-	}
-
-	.clients-list__link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border: 1px solid #afb1b8;
-		border-radius: 4px;
-		height: 100%;
-		width: 100%;
-		padding: 16px 52px;
-		cursor: pointer;
-		color: #afb1b8;
-		transition: border-color$transion,
-			color $transion,
-			fill $transion;
-
-		&:hover,
-		&:focus {
-			border-color: $accent-color;
-			color: $accent-color;
-		}
-	}
-
-	.clients-list__icon {
-		fill: currentColor;
-		cursor: pointer;
+	&:hover,
+	&:focus {
+		border-color: $accent-color;
+		color: $accent-color;
 	}
 }
+
+.clients-list__icon {
+	fill: currentColor;
+	cursor: pointer;
+}
+
 
 @media screen and (min-width:768px) {
 	.section__title {
