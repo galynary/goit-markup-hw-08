@@ -1922,7 +1922,7 @@ button {
 @media screen and (min-width: 480px) {
   .modal {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     right: auto;
     top: 105px;
     -webkit-transform: translateX(-50%);
@@ -2264,7 +2264,7 @@ button {
     position: fixed;
     /*padding-top: 93px;*/
     left: 50%;
-    top: 250px;
+    top: 200px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     background: #fff;
