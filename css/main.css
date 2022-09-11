@@ -363,34 +363,19 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 479px) {
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    padding: 0px 15px;
-  }
-}
 @media screen and (min-width: 480px) {
   .container {
-    margin: 0 auto;
-    min-width: 480px;
-    width: 100%;
-    padding: 0px 15px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    margin: 0 auto;
-    min-width: 768px;
-    width: 100%;
-    padding: 0px 15px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    margin: 0 auto;
     width: 1200px;
-    padding: 0px 15px;
   }
 }
 .studio-hero__button {
@@ -930,176 +915,166 @@ button {
           transform: scale(1.03);
 }
 
-.header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
-}
-.header .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+/*.header {
+	background-color: #ffffff;
+	border-bottom: 1px solid #ececec;
+
+	.header-nav {
+		display: flex;
+	}
 }
 
 .header,
 .header-nav,
 .site-nav,
 .header-nav__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80px;
+	display: flex;
+	align-items: center;
+	height: 80px;
 }
 
+
 .logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-  display: inline-block;
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: $accent-color;
+	display: inline-block;
 }
 
 .header__logo {
-  margin-right: 93px;
+	margin-right: 93px;
 }
 
 .logo__logo-dark {
-  color: #000;
+	color: #000;
 }
 
-.site-nav__item + .site-nav__item {
-  margin-left: 50px;
+.site-nav__item+.site-nav__item {
+	margin-left: 50px;
 }
 
 .site-nav__link {
-  display: block;
-  position: relative;
-  padding: 21px 0px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	display: block;
+	position: relative;
+	padding: 21px 0px;
+	font-weight: 500;
+	font-size: $text-font-size;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: $priamary-color;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .site-nav__link--current {
-  color: #2196f3;
+	color: $accent-color;
+
+
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: $accent-color;
+		position: absolute;
+		bottom: -11px;
+		left: 0;
+		border-radius: 2px;
+		transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
 }
-.site-nav__link--current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  position: absolute;
-  bottom: -11px;
-  left: 0;
-  border-radius: 2px;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+
+
+
+
+
 
 .header-nav__contacts {
-  margin-left: auto;
+	margin-left: auto;
 }
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
+.contacts__item+.contacts__item {
+	margin-left: 50px;
 }
 
 .contact-mail {
-  color: #757575;
-  fill: #757575;
-  padding: 21px 0px;
+	color: $text-color;
+	fill: $text-color;
+	padding: 21px 0px;
 }
 
 .contacts__item:hover,
 .contactst__item:focus {
-  fill: #2196f3;
-  padding: 21px 0px;
+	fill: $accent-color;
+	padding: 21px 0px;
 }
 
+
 .phone {
-  width: 10px;
-  height: 16px;
+	width: 10px;
+	height: 16px;
 }
 
 .contacts__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  background-color: transparent;
-  cursor: pointer;
-  color: #757575;
-  fill: #757575;
-  padding: 15px 0px;
-  -webkit-transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__link:hover, .contacts__link:focus {
-  fill: #2196f3;
-  color: #2196f3;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	font-size: $text-font-size;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	background-color: transparent;
+	cursor: pointer;
+	color: $text-color;
+	fill: $text-color;
+	padding: 15px 0px;
+	transition: transform $transion,
+		color $transion;
+
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+		color: $accent-color;
+		transform: scale(1.02);
+	}
 }
 
 .contacts__icon {
-  margin-right: 10px;
-  color: currentColor;
+	margin-right: 10px;
+	color: currentColor;
 }
 
 .contacts__link {
-  padding: 21px 0px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 15px 0px;
-  color: #757575;
-  fill: #757575;
-  -webkit-transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__link:hover, .contacts__link:focus {
-  color: #2196f3;
-  fill: #2196f3;
-}
-.contacts__link:not(:last-child) {
-  margin-right: 50px;
-}
+	padding: 21px 0px;
+	font-size: $text-font-size;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 15px 0px;
+	color: $text-color;
+	fill: $text-color;
+	transition: transform $transion, color $transion ;
 
+	&:hover,
+	&:focus {
+		color: $accent-color;
+		fill: $accent-color;
+	}
+
+	&:not(:last-child) {
+		margin-right: 50px;
+	}
+}*/
 .portfolio-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1142,6 +1117,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .logo {
@@ -1157,6 +1133,18 @@ button {
 
 .logo__logo-dark {
   color: #000;
+}
+
+.mobile-menu__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .js-open-menu {
@@ -1185,13 +1173,34 @@ button {
   height: 40px;
 }
 
-.js-open-menu,
+.js-open-menu {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #212121;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .js-close-menu {
   position: absolute;
   display: block;
   cursor: pointer;
   right: 25px;
-  top: 25px;
+  top: 21px;
   width: 40px;
   height: 40px;
   -webkit-box-align: center;
@@ -1244,13 +1253,14 @@ button {
   width: 40px;
   height: 40px;
   fill: #212121;
+  top: 21px;
+  right: 25px;
 }
 
 .menu-container {
   position: fixed;
   padding: 47px 40px;
-  width: 100vw;
-  max-height: 769px;
+  height: 100%;
   width: 100%;
   left: 0;
   position: fixed;
@@ -1279,7 +1289,13 @@ button {
 }
 
 .menu-nav {
-  margin-bottom: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menu-contacts {
@@ -1292,7 +1308,6 @@ button {
 }
 
 .menu-nav__link {
-  display: block;
   position: relative;
   font-size: 40px;
   letter-spacing: 0.02em;
@@ -1320,15 +1335,12 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
 }
-.menu-contacts__link:hover, .menu-contacts__link:focus {
+
+.menu-contacts__link--curent {
   color: #2196f3;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-}
-
-.menu-contacts__link--curent {
-  color: #2196f3;
 }
 
 .menu-contacts__item:not(:last-child) {
@@ -1379,7 +1391,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 47vw;
 }
 
 .menu-social__item + .menu-social__item {
@@ -3337,6 +3348,10 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
+.list-team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .list-team__img {
   display: block;
   width: 100%;
@@ -3765,8 +3780,7 @@ button {
   }
 }
 .section__section-portfolio {
-  padding-top: 0;
-  padding-bottom: 60px;
+  padding: 60px 0px;
 }
 
 .section__title--section-portfolio,
@@ -3796,14 +3810,14 @@ button {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   color: #212121;
   font-weight: 500;
   border: 1px solid transparent;
-  padding: 11px 22px;
+  padding: 6px 25px;
   background: #f5f4fa;
   border-radius: 4px;
   text-align: center;
@@ -3834,7 +3848,6 @@ button {
   position: relative;
   max-width: 100%;
   height: auto;
-  margin-bottom: 30px;
 }
 
 .portfolio__link {
@@ -3843,6 +3856,10 @@ button {
 .portfolio__link:hover, .portfolio__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .portfolio-overlay {
@@ -4178,6 +4195,19 @@ button {
     letter-spacing: 0.06em;
     margin-bottom: 4px;
   }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
   .wrap-portfolio__text {
     font-size: 16px;
     color: #757575;
@@ -4248,6 +4278,7 @@ button {
           flex-grow: 1;
   margin: 0 auto;
   display: inline-block;
+  margin-bottom: 60px;
 }
 
 .logo {
@@ -4317,10 +4348,6 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.address-list {
-  margin-bottom: 60px;
 }
 
 .social-icons__footer {
@@ -4670,7 +4697,6 @@ button {
     cursor: pointer;
   }
   .footer-form__input {
-    width: 358px;
     height: 100%;
     font-size: 16px;
     line-height: 1.25;
@@ -4926,7 +4952,6 @@ button {
     cursor: pointer;
   }
   .footer-form__input {
-    width: 358px;
     height: 100%;
     padding: 16px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);

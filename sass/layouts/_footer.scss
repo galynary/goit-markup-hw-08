@@ -17,6 +17,7 @@
 	flex-grow: 1;
 	margin: 0 auto;
 	display: inline-block;
+	margin-bottom: 60px;
 }
 
 .logo {
@@ -89,9 +90,6 @@
 	text-transform: uppercase;
 }
 
-.address-list {
-	margin-bottom: 60px;
-}
 
 .social-icons__footer {
 	margin: 0 auto;
@@ -363,7 +361,6 @@
 	}
 
 	.footer-form__input {
-		width: 358px;
 		height: 100%;
 		font-size: $title-font-size;
 		line-height: 1.25;
@@ -573,7 +570,6 @@
 	}
 
 	.footer-form__input {
-		width: 358px;
 		height: 100%;
 		padding: 16px 16px;
 		border: 1px solid rgba(255, 255, 255, 0.3);

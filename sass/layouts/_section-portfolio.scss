@@ -1,6 +1,5 @@
 .section__section-portfolio {
-	padding-top: 0;
-	padding-bottom: 60px;
+	padding: 60px 0px;
 }
 
 .section__title--section-portfolio,
@@ -28,15 +27,14 @@
 	text-align: center;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.6px;
+	line-height: 1.6;
 	text-align: center;
 	letter-spacing: 0.03em;
-
 	color: #212121;
 	color: $priamary-color;
 	font-weight: 500;
 	border: 1px solid transparent;
-	padding: 11px 22px;
+	padding: 6px 25px;
 	background: #f5f4fa;
 	border-radius: 4px;
 	text-align: center;
@@ -69,8 +67,6 @@
 	position: relative;
 	max-width: 100%;
 	height: auto;
-	margin-bottom: 30px;
-
 }
 
 .portfolio__link {
@@ -81,6 +77,10 @@
 		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 			1px 4px 6px rgba(0, 0, 0, 0.16);
 	}
+}
+
+.portfolio-list__item:not(:last-child) {
+	margin-bottom: 30px;
 }
 
 .portfolio-overlay {
@@ -420,6 +420,19 @@
 		line-height: 2;
 		letter-spacing: 0.06em;
 		margin-bottom: 4px;
+	}
+
+	.visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		clip-path: inset(100%);
+		clip: rect(0 0 0 0);
+		overflow: hidden;
 	}
 
 	.wrap-portfolio__text {

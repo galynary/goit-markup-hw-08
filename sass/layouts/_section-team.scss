@@ -13,6 +13,10 @@
 	border-radius: 0px 0px 4px 4px;
 }
 
+.list-team__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
 .list-team__img {
 	display: block;
 	width: 100%;
