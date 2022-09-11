@@ -992,7 +992,7 @@
                 </div>
             </div>
         </footer>
-        <script src="./js/modal.js"></script>
+
         <script
             defer
             src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -1000,20 +1000,5 @@
             crossorigin="anonymous"
         ></script>
         <script defer src="js/mobile-menu.js"></script>
-        <script>
-            ;(() => {
-                document
-                    .querySelector('.js-speaker-form')
-                    .addEventListener('submit', (e) => {
-                        e.preventDefault()
-
-                        new FormData(e.currentTarget).forEach((value, name) =>
-                            console.log(`${name}: ${value}`)
-                        )
-
-                        e.currentTarget.reset()
-                    })
-            })()
-        </script>
     </body>
 </html>
