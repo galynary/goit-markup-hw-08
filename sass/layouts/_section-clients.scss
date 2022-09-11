@@ -2,9 +2,8 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	gap: 15px;
+	gap: 30px;
 	align-items: center;
-	justify-content: center;
 }
 
 .clients-list__item {
@@ -20,7 +19,6 @@
 	border-radius: 4px;
 	height: 100%;
 	width: 100%;
-	padding: 16px 52px;
 	cursor: pointer;
 	color: #afb1b8;
 	transition: border-color$transion,
