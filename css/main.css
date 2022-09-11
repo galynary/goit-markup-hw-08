@@ -3637,8 +3637,8 @@ button {
 
 .clients-list__item {
   height: 92px;
-  -ms-flex-preferred-size: 35px;
-      flex-basis: 35px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
 
 .clients-list__link {

@@ -8,7 +8,7 @@
 
 .clients-list__item {
 	height: 92px;
-	flex-basis: ((100 - 30px) / 2);
+	flex-basis: calc((100% - 30px) / 2);
 }
 
 .clients-list__link {
