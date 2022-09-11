@@ -69,6 +69,10 @@
 	height: auto;
 }
 
+.portfolio-list__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
 .portfolio__link {
 	display: block;
 
@@ -77,10 +81,6 @@
 		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 			1px 4px 6px rgba(0, 0, 0, 0.16);
 	}
-}
-
-.portfolio-list__item:not(:last-child) {
-	margin-bottom: 30px;
 }
 
 .portfolio-overlay {
@@ -168,10 +168,6 @@
 
 
 @media screen and (min-width:768px) {
-	.section__section-portfolio {
-		padding-top: 0;
-		padding-bottom: 60px;
-	}
 
 	.section__title--section-portfolio,
 	.section__title--section-advantages {
@@ -232,7 +228,11 @@
 	.portfolio-list__item {
 		background: #ffffff;
 		position: relative;
-		flex-basis: calc(50% - 15px);
+		flex-basis: calc((100% - 30px) / 2);
+	}
+
+	.portfolio-list__item:not(:last-child) {
+		margin-bottom: 0px;
 	}
 
 	.portfolio__link {
@@ -321,10 +321,6 @@
 
 
 @media screen and (min-width:1200px) {
-	.section__section-portfolio {
-		padding-top: 0;
-		padding-bottom: 94px;
-	}
 
 	.section__title--section-portfolio,
 	.section__title--section-advantages {
@@ -375,13 +371,19 @@
 	.portfolio-list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		gap: 30px;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.portfolio-list__item {
 		background: #ffffff;
 		position: relative;
+		flex-basis: calc((50% - 15px) / 2);
+	}
+
+	.portfolio-list__item:not(:last-child) {
+		margin-bottom: 0px;
 	}
 
 	.portfolio__link {

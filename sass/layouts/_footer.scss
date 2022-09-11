@@ -3,22 +3,16 @@
 	padding: 60px 0px;
 }
 
-.footer-form {
-	margin: 0 auto;
-
-}
-
 .footer__inner {
 	display: flex;
 	align-items: baseline;
 }
 
-.footter__address {
+/*.footter__address {
 	flex-grow: 1;
 	margin: 0 auto;
 	display: inline-block;
-	margin-bottom: 60px;
-}
+}*/
 
 .logo {
 	font-family: 'Raleway';
@@ -39,9 +33,6 @@
 	color: #fff;
 }
 
-.social-icons__footer {
-	margin-right: 93px;
-}
 
 .address-list__link.address {
 	color: $primary-white-color;
@@ -90,9 +81,11 @@
 	text-transform: uppercase;
 }
 
-
 .social-icons__footer {
-	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.footter__address {
 	margin-bottom: 60px;
 }
 
@@ -158,7 +151,7 @@
 }
 
 .footer-form__input {
-	/*width: 450px;*/
+	width: 100%;
 	height: 50px;
 	font-size: $title-font-size;
 	line-height: 1.25;
@@ -246,13 +239,13 @@
 		color: #fff;
 	}
 
-	.footter__address {
+	/*	.footter__address {
 		display: inline-block;
-		/*	margin-right: 165px;*/
+
 		flex-grow: 1;
 		flex-basis: calc ((100 - 60) / 3);
 		max-width: 207px;
-	}
+	}*/
 
 	.social-icons__footer {
 		margin-bottom: 0px;
@@ -280,14 +273,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: baseline;
-		justify-content: center;
+		justify-content: space-around;
 		gap: 30px;
-		flex-basis: calc ((100 - 60) / 3);
 	}
 
-	.footer-form {
+	/*.footer-form {
 		flex-basis: calc ((100 - 60) / 3);
-	}
+	}*/
 
 	.footer-form__text {
 		display: block;
@@ -361,6 +353,7 @@
 	}
 
 	.footer-form__input {
+		width: 358px;
 		height: 100%;
 		font-size: $title-font-size;
 		line-height: 1.25;
@@ -427,11 +420,6 @@
 		padding: 60px 0px;
 	}
 
-	.footer__inner {
-		display: flex;
-		align-items: baseline;
-	}
-
 	.footter__address {
 		flex-grow: 1;
 	}
@@ -459,9 +447,9 @@
 		flex-grow: 1;
 	}
 
-	.social-icons__footer {
+	/*.social-icons__footer {
 		margin-right: 93px;
-	}
+	}*/
 
 	.address-list__link.address {
 		color: $primary-white-color;
@@ -507,13 +495,8 @@
 		text-transform: uppercase;
 	}
 
-	.footer-form {
-		margin: 0;
-	}
-
 	.footer-form__text {
 		display: flex;
-		margin: 0;
 	}
 
 	.icons-link-footer {

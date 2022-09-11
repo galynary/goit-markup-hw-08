@@ -75,11 +75,7 @@
                                 href=" +380961111111"
                                 class="contacts__link link"
                             >
-                                <svg
-                                    class="contacts__icon phone"
-                                    width="10px"
-                                    higth="16px"
-                                >
+                                <svg class="contacts__icon phone" width="10px">
                                     <use
                                         href="./images/icons.svg/sprite.svg#icon-smartphone"
                                     ></use>
@@ -94,12 +90,7 @@
                         aria-expanded="false"
                         aria-controls="mobile-menu"
                     >
-                        <svg
-                            class="icon-open"
-                            data-menu-open
-                            width="40"
-                            hidth="40"
-                        >
+                        <svg class="icon-open" data-menu-open width="40">
                             <use
                                 class="icon-menu"
                                 href="./images/icons.svg/sprite.svg#icon-menu"
@@ -116,81 +107,86 @@
                             class="menu-toggle js-close-menu"
                             data-menu-close
                         >
-                            <svg
-                                class="icon-close"
-                                data-menu-close
-                                width="40"
-                                hidth="40"
-                            >
+                            <svg class="icon-close" data-menu-close width="40">
                                 <use
                                     class="icon-close"
                                     href="./images/icons.svg/sprite.svg#icon-close"
                                 ></use>
                             </svg>
                         </button>
-                        <ul class="menu-nav list">
-                            <li class="menu-nav__item">
-                                <a class="menu-nav__link link" href="index.html"
-                                    >Студія</a
-                                >
-                            </li>
-                            <li class="menu-nav__item">
-                                <a
-                                    class="menu-nav__link menu-nav__link--current link"
-                                    href="portfolio.html"
-                                    >Портфоліо</a
-                                >
-                            </li>
-                            <li class="menu-nav__item">
-                                <a class="menu-nav__link link" href=""
-                                    >Контакти</a
-                                >
-                            </li>
-                        </ul>
-                        <ul class="menu-contacts list">
-                            <li class="menu-contacts__item">
-                                <a
-                                    href=" +380961111111"
-                                    class="menu-contacts__link menu-contacts__link--curent link"
-                                >
-                                    +38 096 111 11 11
-                                </a>
-                            </li>
-                            <li class="menu-contacts__item">
-                                <a
-                                    href="info@devstudio.com"
-                                    class="menu-contacts__link link"
-                                >
-                                    info@devstudio.com
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="menu-social list">
-                            <li class="menu-social__item">
-                                <a
-                                    class="menu-social__link link"
-                                    href="index.html"
-                                    >Instagram</a
-                                >
-                            </li>
-                            <li class="menu-social__item">
-                                <a
-                                    class="menu-social__link link"
-                                    href="portfolio.html"
-                                    >Twitter</a
-                                >
-                            </li>
-                            <li class="menu-social__item">
-                                <a class="menu-social__link link" href=""
-                                    >Facebook</a
-                                >
-                            </li>
-                            <li class="menu-social__item">
-                                <a class="menu-social__link link" href=""
-                                    >LinkedIn</a
-                                >
-                            </li>
-                        </ul>
+                        <div class="mobile-menu__container">
+                            <ul class="menu-nav list">
+                                <li class="menu-nav__item">
+                                    <a
+                                        class="menu-nav__link link"
+                                        href="index.html"
+                                        >Студія</a
+                                    >
+                                </li>
+                                <li class="menu-nav__item">
+                                    <a
+                                        class="menu-nav__link menu-nav__link--current link"
+                                        href="portfolio.html"
+                                        >Портфоліо</a
+                                    >
+                                </li>
+                                <li class="menu-nav__item">
+                                    <a class="menu-nav__link link" href=""
+                                        >Контакти</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="content-bottom">
+                                <ul class="menu-contacts list">
+                                    <li class="menu-contacts__item">
+                                        <a
+                                            href=" +380961111111"
+                                            class="menu-contacts__link menu-contacts__link--curent link"
+                                        >
+                                            +38 096 111 11 11
+                                        </a>
+                                    </li>
+                                    <li class="menu-contacts__item">
+                                        <a
+                                            href="info@devstudio.com"
+                                            class="menu-contacts__link link"
+                                        >
+                                            info@devstudio.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="menu-social list">
+                                    <li class="menu-social__item">
+                                        <a
+                                            class="menu-social__link link"
+                                            href="index.html"
+                                            >Instagram</a
+                                        >
+                                    </li>
+                                    <li class="menu-social__item">
+                                        <a
+                                            class="menu-social__link link"
+                                            href="portfolio.html"
+                                            >Twitter</a
+                                        >
+                                    </li>
+                                    <li class="menu-social__item">
+                                        <a
+                                            class="menu-social__link link"
+                                            href=""
+                                            >Facebook</a
+                                        >
+                                    </li>
+                                    <li class="menu-social__item">
+                                        <a
+                                            class="menu-social__link link"
+                                            href=""
+                                            >LinkedIn</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,16 +195,18 @@
             <!--портфоліо-->
             <section class="section__section-portfolio">
                 <div class="container">
-                    <h1 class="section__title--section-portfolio is-hidden">
+                    <h1
+                        class="section__title--section-portfolio visually-hidden"
+                    >
                         Portfolio
                     </h1>
-                    <ul class="buttons">
+                    <div class="buttons">
                         <button type="button" class="button">Все</button>
                         <button type="button" class="button">Веб-сайти</button>
                         <button type="button" class="button">Додатки</button>
                         <button type="button" class="button">Дизайн</button>
                         <button type="button" class="button">Маркетин</button>
-                    </ul>
+                    </div>
                     <ul class="portfolio-list list">
                         <li class="portfolio-list__item">
                             <a href="" class="portfolio__link link">
@@ -635,7 +633,7 @@
                                 </div>
                                 <div class="wrap-portfolio-text">
                                     <h2 class="wrap-portfolio__title">
-                                        Inspiration has no Borders
+                                        Проект Borders
                                     </h2>
                                     <p class="wrap-portfolio__text">Веб-сайт</p>
                                 </div>
@@ -897,8 +895,8 @@
                                 >
                                     <svg
                                         class="icon-footer"
-                                        width="20px"
-                                        height="20px"
+                                        width="20"
+                                        height="20"
                                     >
                                         <use
                                             href="./images/icons.svg/sprite.svg#icon-instagram"
@@ -913,8 +911,8 @@
                                 >
                                     <svg
                                         class="icon-footer"
-                                        width="20px"
-                                        height="20px"
+                                        width="20"
+                                        height="20"
                                     >
                                         <use
                                             href="./images/icons.svg/sprite.svg#icon-twitter"
@@ -929,8 +927,8 @@
                                 >
                                     <svg
                                         class="icon-footer"
-                                        width="20px"
-                                        height="20px"
+                                        width="20"
+                                        height="20"
                                     >
                                         <use
                                             href="./images/icons.svg/sprite.svg#icon-facebook"
@@ -945,13 +943,13 @@
                                 >
                                     <svg
                                         class="icon-footer"
-                                        width="20px"
-                                        height="20px"
+                                        width="20"
+                                        height="20"
                                     >
                                         <use
                                             href="./images/icons.svg/sprite.svg#icon-linkedin"
-                                            width="20px"
-                                            height="20px"
+                                            width="20"
+                                            height="20"
                                         ></use>
                                     </svg>
                                 </a>
@@ -966,12 +964,9 @@
                             <div class="form-input">
                                 <input
                                     class="footer-form__input"
-                                    type="mail"
+                                    type="email"
                                     name="mail"
                                     id="mail-footer"
-                                    required
-                                    minlength="6"
-                                    maxlength="12"
                                     placeholder="E-mail"
                                 />
                             </div>
