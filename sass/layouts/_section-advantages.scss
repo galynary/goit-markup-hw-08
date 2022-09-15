@@ -110,6 +110,10 @@
 		gap: 30px;
 	}
 
+	.list-advantages__item:not(:last-child) {
+		margin-bottom: 0px;
+	}
+
 	.list-advantages__item {
 		flex-basis: calc(100% / 2 - 15px);
 	}

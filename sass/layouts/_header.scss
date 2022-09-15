@@ -9,6 +9,11 @@
 	position: relative;
 }
 
+.header {
+	background-color: #fff;
+	border-bottom: 1px solid #ececec;
+}
+
 
 .logo {
 	font-family: 'Raleway';
@@ -325,6 +330,11 @@
 		}
 	}
 
+	.header {
+		background-color: #fff;
+		border-bottom: 1px solid #ececec;
+	}
+
 	.header,
 	.header-nav,
 	.site-nav,
@@ -398,7 +408,7 @@
 		flex-direction: column;
 		margin-left: auto;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		text-align: left;
 	}
 
@@ -427,10 +437,6 @@
 	.phone {
 		width: 10px;
 		height: 16px;
-	}
-
-	.contacts__icon.phone {
-		margin-left: -16px;
 	}
 
 	.contacts__icon {
@@ -502,9 +508,10 @@
 	}
 
 	.header-nav__contacts {
-		display: inline-block;
+		display: flex;
 		align-items: center;
-		height: 80px;
+		text-align: left;
+		flex-direction: row;
 	}
 
 	.header,
@@ -576,12 +583,12 @@
 
 	.contacts__item+.contacts__item {
 		margin-left: 50px;
+		margin-top: 0px;
 	}
 
 	.contacts__item {
 		color: $text-color;
 		fill: $text-color;
-		padding: 21px 0px;
 	}
 
 	.contacts__item:hover,
